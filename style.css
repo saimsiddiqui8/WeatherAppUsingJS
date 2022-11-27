@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: none;
+}
+
+body {
+    background-color: #343D4C !important;
+}
+
+/* dark mode  */
+
+
+
+/* main body  */
+
+.main {
+    margin-left: 10rem !important;
+    margin-right: 10rem !important;
+}
+
+.cardOne {
+    color: white;
+    background: rgb(133, 235, 239);
+    background: linear-gradient(90deg, rgba(133, 235, 239, 1) 0%, rgba(96, 139, 194, 1) 63%, rgba(107, 104, 211, 1) 100%);
+    border-radius: 2rem;
+}
+
+
+
+.data2 {
+    margin-top: 2rem;
+}
+
+.day,
+.temperature {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#imgIcon {
+    width: 7rem;
+    height: 8rem;
+}
+
+/* Card Two  */
+
+.cardTwo {
+    background-color: #212832;
+    border-radius: 2rem;
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.info .title {
+    float: left;
+    font-weight: 700;
+}
+
+.info .value {
+    float: right;
+    color: rgb(143, 160, 160);
+}
+
+/* 4 days  */
+
+.day-info-1 {
+    border-radius: 2rem;
+    background-color: #fff;
+}
+
+.day-info:hover {
+    border-radius: 2rem;
+    background-color: #fff;
+}
+
+
+/* search box  */
+
+.search-box {
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+
+}
+
+.input-search {
+    height: 50px;
+    width: 50px;
+    border-style: none;
+    padding: 10px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    outline: none;
+    border-radius: 25px;
+    transition: all .5s ease-in-out;
+    background-color: rgba(107, 104, 211, 1);
+    padding-right: 40px;
+    color: #fff;
+}
+
+.input-search::placeholder {
+    color: rgba(255, 255, 255, .5);
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+
+.btn-search {
+    width: 50px;
+    height: 50px;
+    border-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    right: 0px;
+    color: #ffffff;
+    background-color: transparent;
+    pointer-events: painted;
+}
+
+.btn-search:focus~.input-search {
+    width: 300px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+
+.input-search:focus {
+    width: 300px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+
+.swal-overlay--show-modal .swal-modal {
+
+    transition: transform .5s;
+    /* Animation */
+}
+
+.swal-overlay--show-modal .swal-modal:hover {
+    transform: scale(1.05);
+}
+
+.swal-text {
+    color: #fff;
+}
+
+.swal-title {
+    color: #fff;
+}
+
+.swal-icon--error {
+    border-color: red;
+}
+
+.swal-button {
+    background-color: rgba(107, 104, 211, 1);
+}
+
+.swal-modal {
+    background: rgb(133, 235, 239);
+    background: linear-gradient(90deg, rgba(133, 235, 239, 1) 0%, rgba(96, 139, 194, 1) 63%, rgba(107, 104, 211, 1) 100%);
+
+}
+
+/* css animation  */
+
+#zoom-box {
+
+    transition: transform .5s;
+    /* Animation */
+}
+
+#zoom-box:hover {
+    transform: scale(1.05);
+}
+
+
+
+/* media query  */
+@media only screen and (max-width: 1200px) {
+    .main {
+        margin-left: 5rem !important;
+        margin-right: 5rem !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main {
+        margin-left: 4rem !important;
+        margin-right: 4rem !important;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .main {
+        margin-left: 1.5rem !important;
+        margin-right: 1.5rem !important;
+    }
+}
